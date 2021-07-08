@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Custom properties */
+:root {
+  --ff-primary: 'Montserrat', sans-serif;
+  --ff-secondary: 'Oswald', sans-serif;
+
+  --fw-light: 200;
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #16e0bd;
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 7.2rem;
+    --fs-h2: 6rem;
+    --fs-h3: 2.4rem;
+    --fs-body: 1.8rem;
+  }
+}
+
+/* General Styles */
+html {
+  /* 1rem equals 10px */
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+}
