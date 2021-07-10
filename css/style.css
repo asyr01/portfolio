@@ -16,6 +16,9 @@
   --clr-light: #fff;
   --clr-dark: #303030;
   --clr-accent: #16e0bd;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.35);
 }
 
 @media (min-width: 800px) {
@@ -110,6 +113,11 @@ nav {
   position: relative;
 }
 
+.intro__img {
+  box-shadow: var(--bs);
+}
+
+/* Media query for after 600px */
 @media (min-width: 600px) {
   .intro {
     display: grid;
@@ -121,6 +129,7 @@ nav {
       'img subtitle';
     grid-template-columns: min-content max-content;
   }
+
   /* So imgs are never disappear */
   .intro__img {
     grid-area: img;
