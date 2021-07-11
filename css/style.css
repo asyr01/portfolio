@@ -118,6 +118,7 @@ h3 {
 .section__subtitle {
   margin: 0;
   font-size: var(--fs-h3);
+  letter-spacing: 2px;
 }
 
 .section__subtitle--intro,
@@ -167,6 +168,7 @@ nav {
     position: relative;
     z-index: 2;
   }
+
   /* full-stack developer text */
   .section__subtitle--intro {
     align-self: start;
@@ -233,9 +235,39 @@ nav {
   margin: 0 auto;
 }
 
+.about-me__img {
+  box-shadow: var(--bs);
+}
+
+/* Media query for after 600px */
 @media (min-width: 600px) {
   .about-me {
     display: grid;
     grid-template-columns: 1fr 200px;
+    grid-template-areas:
+      'title img'
+      'subtitle img'
+      'text img';
+    grid-column-gap: 20px;
+  }
+
+  .section__title--about {
+    grid-area: title;
+  }
+
+  /* 4 em to have more stick out effect */
+  .section__subtitle--about {
+    grid-area: subtitle;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -2em;
+    width: calc(100% + 4em);
+    padding-left: 2em;
+    padding-right: calc(200px + 2em);
+  }
+
+  .about-me__img {
+    grid-area: img;
   }
 }
