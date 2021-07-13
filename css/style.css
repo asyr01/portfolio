@@ -141,8 +141,39 @@ h3 {
 }
 
 /* header */
-nav {
-  display: none;
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  max-width: 100px;
+}
+
+/* When nav is open */
+.nav {
+  position: fixed;
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transform: translateX(0);
+  transition: transform 250ms cubic-bezier(0.5, 0 0.5, 1);
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav__link {
+  color: inherit;
 }
 
 /* Intro section */
