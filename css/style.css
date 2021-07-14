@@ -185,6 +185,19 @@ header {
   color: var(--clr-accent);
 }
 
+.nav-toggle {
+  padding: 0.5em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  z-index: 100;
+  transform: translateX(150%);
+  transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+}
+
 /* hamburger */
 .hamburger {
   display: block;
