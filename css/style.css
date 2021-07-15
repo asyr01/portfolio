@@ -190,7 +190,7 @@ header {
   background: transparent;
   border: 0;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   top: 1em;
   right: 1em;
   z-index: 100;
@@ -204,6 +204,18 @@ header {
 
 .nav-open .nav-toggle {
   position: fixed;
+}
+
+.nav-open .hamburger {
+  transform: rotate(0.625turn);
+}
+
+.nav-open .hamburger::after {
+  opacity: 0;
+}
+
+.nav-open .hamburger::before {
+  transform: rotate(90deg) translateX(-6px);
 }
 
 /* hamburger */
