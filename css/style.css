@@ -314,7 +314,7 @@ header {
   display: block;
   width: 25%;
   height: 1px;
-  margin: 0.5em auto 1em;
+  margin: 0.2em auto 1em;
   background: currentcolor;
 }
 
@@ -331,7 +331,7 @@ header {
 @media (min-width: 800px) {
   .services {
     display: flex;
-    min-width: 1000px;
+    min-width: 800px;
     margin-left: auto;
     margin-right: auto;
   }
