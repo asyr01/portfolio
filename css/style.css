@@ -148,6 +148,7 @@ header {
 }
 
 .logo {
+  position: fixed;
   max-width: 100px;
   margin: 10px 30px;
 }
