@@ -152,15 +152,23 @@ header {
   margin: 10px 30px;
 }
 
-.logo:first-child {
+.logo .logo__link {
   text-decoration: none;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
-.logo:hover {
-  transform: skew(3deg, 3deg);
+.logo .logo__link:visited,
+.logo__link:active {
+  color: inherit;
+}
+
+.logo:hover .logo__link {
   cursor: pointer;
+  letter-spacing: 3px;
+  font-weight: var(--fw-bold);
+  color: var(--clr-accent);
 }
 
 /* When nav is open */
