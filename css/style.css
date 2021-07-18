@@ -146,8 +146,21 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
 .logo {
   max-width: 100px;
+  margin: 10px 30px;
+}
+
+.logo:first-child {
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.logo:hover {
+  transform: skew(3deg, 3deg);
+  cursor: pointer;
 }
 
 /* When nav is open */
