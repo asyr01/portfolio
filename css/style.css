@@ -15,7 +15,7 @@
 
   --clr-light: #fff;
   --clr-dark: #201c1c;
-  --clr-accent: #e94747;
+  --clr-accent: #e2c542;
 
   --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.35);
@@ -515,5 +515,6 @@ header {
 }
 
 .header__container.active .logo__link {
-  color: var(--clr-light);
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
 }
