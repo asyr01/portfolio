@@ -502,6 +502,18 @@ header {
   margin-right: auto;
 }
 
+.header__container {
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  z-index: 1200;
+  transition: 250ms ease-in;
+}
+
 .active {
-  background-color: olive;
+  background-color: var(--clr-dark);
+}
+
+.header__container.active .logo__link {
+  color: var(--clr-light);
 }
