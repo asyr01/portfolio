@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #db3c3c;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.btn {
+  background-color: #a0a0ec;
+  color: #fff;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 3rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+/* Clicking effect */
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* General toast container positioned */
+#toasts {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Specific stylings to toast */
+.toast {
+  background-color: white;
+  color: #db3c3c;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  position: relative;
+  font-size: 20px;
+}
+
+.close {
+  position: absolute;
+  cursor: pointer;
+  background-color: #dac18b;
+  color: #db3c3c;
+  top: -25px;
+  padding: 3px 9px;
+  right: -5px;
+  border-radius: 50%;
+}
+
+.toast.info {
+  color: #db3c3c;
+}
+
+.toast.success {
+  color: #0f0;
+}
+
+.toast.error {
+  color: #f00;
+}
