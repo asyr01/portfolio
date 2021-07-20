@@ -23,3 +23,45 @@ function changeNav() {
     headerContainer.classList.remove('active');
   }
 }
+
+const projects = [
+  {
+    number: 1,
+    subtitle: 'An excellent project with an excellent roadmap',
+    name: 'Expanding Cards',
+    pathName: 'd1-expandingCards',
+    imgLink: '1-expanding-cards.png',
+  },
+  {
+    number: 2,
+    name: 'Progress Steps',
+    pathName: 'd2-progressSteps',
+    imgLink: '2-progress-steps.png',
+  },
+];
+
+const projectsEl = document.getElementById('portfolio');
+
+projects.forEach((project) => {
+  projectEl = document.createElement('div');
+  projectEl.classList.add('portfolio__container');
+  projectEl.innerHTML = `
+  <a href="./portfolio-page.html" class="portfolio__item">
+          <img src="img/projects-img/${project.imgLink}" alt="${project.name}"
+            class="portfolio__img"
+          />
+        </a>
+      
+      <div class="content">
+          <h4>${project.name}</h4>
+          <a
+              href="/projects/${project.pathName}"
+              target="_blank"
+              class="btn btn-primary"
+              >Live Demo</a
+          >
+      </div>
+  `;
+
+  projectsEl.appendChild(projectEl);
+});
