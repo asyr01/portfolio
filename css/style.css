@@ -437,6 +437,7 @@ header {
   transition: all 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
   border-radius: 6px;
   height: 400px;
+  width: 400px;
 }
 
 .portfolio__img:hover,
