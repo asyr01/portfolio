@@ -29,18 +29,22 @@ const projects = [
     number: 1,
     subtitle: 'An excellent project with an excellent roadmap',
     name: 'Expanding Cards',
+    explanation: 'This project has four parts ....',
     pathName: 'd1-expandingCards',
     imgLink: '1-expanding-cards.png',
   },
   {
     number: 2,
+    subtitle: 'An excellent project with an excellent roadmap',
     name: 'Progress Steps',
+    explanation: 'This project has five parts ....',
     pathName: 'd2-progressSteps',
     imgLink: '2-progress-steps.png',
   },
 ];
 
 const projectsEl = document.getElementById('portfolio');
+const portfolioPage = document.getElementById('portfolio-page');
 
 projects.forEach((project) => {
   projectEl = document.createElement('div');
@@ -51,17 +55,13 @@ projects.forEach((project) => {
             class="portfolio__img"
           />
         </a>
-      
-      <div class="content">
           <h4>${project.name}</h4>
           <a
-              href="/projects/${project.pathName}"
+              href="/projects/${project.pathName}/"
               target="_blank"
-              class="btn btn-primary"
+              class="btn"
               >Live Demo</a
           >
-      </div>
   `;
-
   projectsEl.appendChild(projectEl);
 });
