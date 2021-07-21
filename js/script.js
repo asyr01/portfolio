@@ -41,10 +41,17 @@ const projects = [
     pathName: 'd2-progressSteps',
     imgLink: '2-progress-steps.png',
   },
+  {
+    number: 3,
+    subtitle: 'An excellent project with an excellent roadmap',
+    name: 'Quotarium',
+    explanation: 'This project has five parts ....',
+    pathName: 'quotarium',
+    imgLink: '3-quotarium.png',
+  },
 ];
 
 const projectsEl = document.getElementById('portfolio');
-const portfolioPage = document.getElementById('portfolio-page');
 
 projects.forEach((project) => {
   projectEl = document.createElement('div');
