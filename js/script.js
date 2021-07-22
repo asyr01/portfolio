@@ -49,6 +49,14 @@ const projects = [
     pathName: 'quotarium',
     imgLink: '3-quotarium.png',
   },
+  {
+    number: 4,
+    subtitle: 'An excellent project with an excellent roadmap',
+    name: 'Digital Adana',
+    explanation: 'This project has five parts ....',
+    pathName: 'Digital Adana',
+    imgLink: 'digitaladana.png',
+  },
 ];
 
 const projectsEl = document.getElementById('portfolio');
