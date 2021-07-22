@@ -65,18 +65,14 @@ projects.forEach((project) => {
   projectEl = document.createElement('div');
   projectEl.classList.add('portfolio__container');
   projectEl.innerHTML = `
-  <a href="./portfolio-page.html" class="portfolio__item">
+  <a href="/projects/${project.pathName}/"
+  target="_blank" class="portfolio__item">
           <img src="img/projects-img/${project.imgLink}" alt="${project.name}"
             class="portfolio__img"
           />
         </a>
           <h4>${project.name}</h4>
-          <a
-              href="/projects/${project.pathName}/"
-              target="_blank"
-              class="btn"
-              >Live Demo</a
-          >
+     
   `;
   projectsEl.appendChild(projectEl);
 });
