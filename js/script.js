@@ -54,7 +54,7 @@ const projects = [
     subtitle: 'An excellent project with an excellent roadmap',
     name: 'Digital Adana',
     explanation: 'This project has five parts ....',
-    pathName: 'Digital Adana',
+    pathName: 'digitaladana',
     imgLink: 'digitaladana.png',
   },
 ];
@@ -65,7 +65,7 @@ projects.forEach((project) => {
   projectEl = document.createElement('div');
   projectEl.classList.add('portfolio__container');
   projectEl.innerHTML = `
-  <a href="/projects/${project.pathName}/"
+  <a href="./projects/${project.pathName}/index.html"
   target="_blank" class="portfolio__item">
           <img src="img/projects-img/${project.imgLink}" alt="${project.name}"
             class="portfolio__img"
